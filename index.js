@@ -10,7 +10,7 @@ console.log("ready")
 
 client.on("messageCreate", async message => {
 if(message.content === "delete-tickets"){
-    if(!message.member.permissions.has("ADMINSTRATOR")) return;
+    if(!message.member.permissions.has("ADMINISTRATOR")) return;
 const row = new MessageActionRow()
 .addComponents(
     new MessageButton()
